@@ -197,3 +197,14 @@ shooting-star {
         opacity: 0;
     }
 }
+.ending {
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 700px;
+    text-align: center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    color: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 25px rgba(255,255,255,0.15);
+}

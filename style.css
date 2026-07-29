@@ -166,3 +166,13 @@ quote {
     min-height: 40px;
     transition: 0.4s;
 }
+.counter {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#daysTogether {
+    font-size: 22px;
+    color: #ffe4ec;
+    font-weight: bold;
+}

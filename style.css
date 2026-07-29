@@ -26,3 +26,16 @@ button:hover {
     transform: scale(1.08);
     box-shadow: 0 0 35px rgba(255, 77, 109, 1);
 }
+moon {
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    width: 120px;
+    height: 120px;
+    background: #fff8dc;
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px #fff8dc,
+        0 0 40px #fff8dc,
+        0 0 80px #fff8dc;
+}

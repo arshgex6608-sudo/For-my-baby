@@ -70,3 +70,14 @@ reasonBtn.addEventListener("click", () => {
         index = 0;
     }
 });
+// ❤️ Change this date to the day you both got together
+const anniversary = new Date("2026-04-04");
+
+const today = new Date();
+
+const diff = today - anniversary;
+
+const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+document.getElementById("daysTogether").textContent =
+⁠ ❤️ ${days} days together ❤️ ⁠;

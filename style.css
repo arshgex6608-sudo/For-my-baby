@@ -82,3 +82,21 @@ hidden {
         transform: translateY(0);
     }
 }
+heart {
+    position: fixed;
+    bottom: -40px;
+    animation: floatUp 5s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}

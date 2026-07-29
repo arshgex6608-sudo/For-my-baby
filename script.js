@@ -47,3 +47,26 @@ setInterval(() => {
     }, 5000);
 
 }, 500);
+const reasons = [
+    "❤️ Your beautiful smile",
+    "🥺 The way you care for me",
+    "😂 The way you make me laugh",
+    "🌙 You're my peace",
+    "✨ You're my favorite person",
+    "💖 Everything about you"
+];
+
+const reasonBtn = document.getElementById("reasonBtn");
+const reasonText = document.getElementById("reasonText");
+
+let index = 0;
+
+reasonBtn.addEventListener("click", () => {
+    reasonText.textContent = reasons[index];
+
+    index++;
+
+    if (index >= reasons.length) {
+        index = 0;
+    }
+});

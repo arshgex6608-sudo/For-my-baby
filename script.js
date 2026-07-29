@@ -81,3 +81,17 @@ const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
 document.getElementById("daysTogether").textContent =
 ⁠ ❤️ ${days} days together ❤️ ⁠;
+/ 🌠 Shooting Stars
+setInterval(() => {
+    const shootingStar = document.createElement("div");
+    shootingStar.classList.add("shooting-star");
+
+    shootingStar.style.top = Math.random() * 40 + "vh";
+    shootingStar.style.left = "-150px";
+
+    document.body.appendChild(shootingStar);
+
+    setTimeout(() => {
+        shootingStar.remove();
+    }, 3000);
+}, 5000);

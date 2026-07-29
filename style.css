@@ -176,3 +176,24 @@ quote {
     color: #ffe4ec;
     font-weight: bold;
 }
+shooting-star {
+    position: fixed;
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to right, white, transparent);
+    transform: rotate(-25deg);
+    animation: shoot 3s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes shoot {
+    from {
+        transform: translateX(0) translateY(0) rotate(-25deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(120vw) translateY(60vh) rotate(-25deg);
+        opacity: 0;
+    }
+}

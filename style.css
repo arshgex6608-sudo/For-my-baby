@@ -39,3 +39,22 @@ moon {
         0 0 40px #fff8dc,
         0 0 80px #fff8dc;
 }
+star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}

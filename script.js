@@ -4,6 +4,19 @@ const letter = document.getElementById("letter");
 button.addEventListener("click", () => {
     letter.classList.remove("hidden");
     button.style.display = "none";
+
+    for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.animationDelay = Math.random() * 2 + "s";
+        confetti.style.background = ⁠ hsl(${Math.random() * 360},100%,60%) ⁠;
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => confetti.remove(), 4000);
+    }
 });
 
 // Create stars

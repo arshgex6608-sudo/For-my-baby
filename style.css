@@ -98,10 +98,13 @@ button:hover {
     }
 }
 .gallery {
-    margin-top: 30px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
 }
-
 gallery img {
     width: 260px;
     max-width: 90%;

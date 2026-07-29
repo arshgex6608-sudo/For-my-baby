@@ -11,7 +11,7 @@ button.addEventListener("click", () => {
 
         confetti.style.left = Math.random() * 100 + "vw";
         confetti.style.animationDelay = Math.random() * 2 + "s";
-        confetti.style.background = ⁠ hsl(${Math.random() * 360}, 100%, 60%) ⁠;
+        confetti.style.background = "hsl(" + (Math.random() * 360) + ", 100%, 60%)";
 
         document.body.appendChild(confetti);
 
@@ -80,7 +80,7 @@ const diff = today - anniversary;
 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
 document.getElementById("daysTogether").textContent =
-⁠ ❤️ ${days} days together ❤️ ⁠;
+"❤️ " + days + " days together ❤️";
 // 🌠 Shooting Stars
 setInterval(() => {
     const shootingStar = document.createElement("div");
